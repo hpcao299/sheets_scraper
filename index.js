@@ -67,7 +67,7 @@ function init() {
 
         data.map(member => {
             html += `
-            <a href="/member.html?slug=${member.slug}">
+            <a href="./member.html?slug=${member.slug}">
             <div class="member-item">
             <img
             src="${member.avatar_url}"

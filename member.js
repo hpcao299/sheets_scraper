@@ -6,7 +6,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const slug = urlParams.get('slug');
 
 if (!slug) {
-    window.location.href = `${window.location.origin}/index.html`;
+    window.location.href = `https://hpcao299.github.io/sheets_scraper/`;
 }
 
 const query = encodeURIComponent(`Select * WHERE F = "${slug}"`);
@@ -44,7 +44,7 @@ function init() {
         })
         .finally(() => {
             if (!data) {
-                window.location.href = `${window.location.origin}/index.html`;
+                window.location.href = `https://hpcao299.github.io/sheets_scraper/`;
                 return;
             }
 
