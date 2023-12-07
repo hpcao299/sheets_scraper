@@ -48,6 +48,7 @@ function init() {
                 return;
             }
 
+            document.title = data.name;
             contentElement.classList.remove('loader');
             processData(data);
         });
